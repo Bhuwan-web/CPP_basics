@@ -10,8 +10,8 @@ int main(){
         for(int j=0;j<3-i-1;j++){
             if(num[j]>num[j+1]){
                 int temp=num[j+1];
-                num[j]=num[j+1];
-                num[j+1]=num[temp];
+                num[j+1]=num[j];
+                num[j]=temp;
             }
         }
     }
